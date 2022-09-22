@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>POST</http_method>
+        <name>update</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+//	response.setBody(request.body.data);
+	var result = request.body.data.result;
+	var sysId = result.sys_id;
+	
+	var macroponent = new GlideQuery('sys_ux_macroponent')
+		.where('sys_id', sysId)
+		.update(result);
+	
+	response.setBody({"response" : "Success"});
+})(request, response);]]></operation_script>
+        <operation_uri>/api/snc/macroponent</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/</relative_path>
+        <request_example/>
+        <requires_acl_authorization>false</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>jon.lind</sys_created_by>
+        <sys_created_on>2022-09-22 21:44:46</sys_created_on>
+        <sys_id>2c4258a287065510a46bfc86dabb3576</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>update</sys_name>
+        <sys_package display_value="UIC Event Fixer" source="4de5e79e4f8ed190ff1f840321ad485d">4de5e79e4f8ed190ff1f840321ad485d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="UIC Event Fixer">4de5e79e4f8ed190ff1f840321ad485d</sys_scope>
+        <sys_update_name>sys_ws_operation_2c4258a287065510a46bfc86dabb3576</sys_update_name>
+        <sys_updated_by>jon.lind</sys_updated_by>
+        <sys_updated_on>2022-09-22 22:10:19</sys_updated_on>
+        <web_service_definition display_value="Macroponent">cc36e7de4f8ed190ff1f840321ad489e</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>
