@@ -5,7 +5,10 @@ Two ways to keep your macroponent's events from getting wiped out when deploying
 ## A: Business Rule
 
 This is the simplest solution and does not require exposing an API on your dev instance.  
-After installing this application in your environment two business rules, an "On Delete" and "After Insert", which will save your configurations to a user preference with a prefix of "Events for Macroponent {sys_id of the macroponent}". 
+
+**NOTE:** This is configured by default when you install this in your instance.
+
+After installing this application in your environment two business rules, "Macroponent After Insert" and "Macroponent Before Delete", will save your event references from your macroponent definition to a user preference with a prefix of "Events for Macroponent {sys_id of the macroponent}" and automatically re-apply them after installation of your custom component. 
 
 The events should only fire when the SNC ui-component Command Line tools are making the changes so you can still edit the sys_ux_macroponent record manually if needed.  Whatever references of Dispatched and Handled events that existed just before the latest installation of your component will be preserved automatically.
 
