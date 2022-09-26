@@ -1,6 +1,6 @@
 # uic-event-fixer
 
-Two ways to keep your macroponent's events from getting wiped out when deploying custom components using the (ServiceNow CLI)[https://docs.servicenow.com/bundle/tokyo-application-development/page/build/servicenow-cli/concept/servicenow-cli.html] ui-component modules.
+Two ways to keep your macroponent's events from getting wiped out when deploying custom components using the [ServiceNow CLI](https://docs.servicenow.com/bundle/tokyo-application-development/page/build/servicenow-cli/concept/servicenow-cli.html) ui-component modules.
 
 ## A: Business Rule
 
