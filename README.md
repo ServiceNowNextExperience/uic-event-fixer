@@ -1,6 +1,6 @@
 # uic-event-fixer
 
-Two ways to keep your macroponent's events from getting wiped out when deploying custom components.
+Two ways to keep your macroponent's events from getting wiped out when deploying custom components using the (ServiceNow CLI)[https://docs.servicenow.com/bundle/tokyo-application-development/page/build/servicenow-cli/concept/servicenow-cli.html] ui-component modules.
 
 ## A: Business Rule
 
@@ -13,7 +13,7 @@ The events should only fire when the SNC ui-component Command Line tools are mak
 
 This is the most complex solution.  This adds a scripted REST api which you can call to update the retrieve and udpate the events before an after deploying your custom component.  It also gives you the most control over the behavior.
 
-The downside of this is that it cannot use your credentials stored in the SNC cli's profile so you will have to retype your instance password each time you use it (or take responsibility to save it some other way on your local dev environment).
+The downside of this is that it cannot use the credentials stored in the SNC cli's profile so you will have to retype your instance password each time you use it (or take responsibility to save it some other way on your local dev environment).
 
 I also include a sample deploy.sh script that shows how to use it (it is attached to the "Macroponent" Scripted Rest API record).  **NOTE:** The deploy.sh script is Mac only, but should provide inspiration.
 
