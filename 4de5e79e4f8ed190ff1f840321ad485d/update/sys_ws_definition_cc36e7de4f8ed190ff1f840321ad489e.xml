@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_definition">
     <sys_ws_definition action="INSERT_OR_UPDATE">
-        <active>true</active>
+        <active>false</active>
         <base_uri>/api/snc/macroponent</base_uri>
         <consumes>application/json,application/xml,text/xml</consumes>
         <consumes_customized>false</consumes_customized>
@@ -18,13 +18,13 @@
         <sys_created_by>jon.lind</sys_created_by>
         <sys_created_on>2022-09-22 18:32:26</sys_created_on>
         <sys_id>cc36e7de4f8ed190ff1f840321ad489e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Macroponent</sys_name>
         <sys_package display_value="UIC Event Fixer" source="4de5e79e4f8ed190ff1f840321ad485d">4de5e79e4f8ed190ff1f840321ad485d</sys_package>
         <sys_policy/>
         <sys_scope display_value="UIC Event Fixer">4de5e79e4f8ed190ff1f840321ad485d</sys_scope>
         <sys_update_name>sys_ws_definition_cc36e7de4f8ed190ff1f840321ad489e</sys_update_name>
         <sys_updated_by>jon.lind</sys_updated_by>
-        <sys_updated_on>2022-09-22 18:32:26</sys_updated_on>
+        <sys_updated_on>2022-09-26 18:37:25</sys_updated_on>
     </sys_ws_definition>
 </record_update>
