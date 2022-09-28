@@ -14,7 +14,7 @@ The events should only fire when the SNC ui-component Command Line tools are mak
 
 ## B:API
 
-This is the most complex solution.  This adds a scripted REST api which you can call to update the retrieve and udpate the events before an after deploying your custom component.  It also gives you the most control over the behavior.
+This is a more complex solution.  This adds a scripted REST api which you can call to retrieve and udpate the events before and after deploying your custom component.  It also gives you the most control over the behavior and if you wanted to you could extend this API for other uses.
 
 The downside of this is that it cannot use the credentials stored in the SNC cli's profile so you will have to retype your instance password each time you use it (or take responsibility to save it some other way on your local dev environment).
 
